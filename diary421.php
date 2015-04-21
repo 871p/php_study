@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yanai
- * Date: 2015/04/21
- * Time: 17:18
- */
 $a = rand(30,100);
 
 echo "今日の充実度は $a ％です。";
