@@ -21,5 +21,6 @@ $fruits = array(
 );
 
 foreach($fruits as $name => $value){
-    echo "$name　は　１つ　{$value['price']}円で、 {$value['count']}個です",PHP_EOL;
+    echo "$name は １つ {$value['price']}円で、{$value['count']}個です。 ",PHP_EOL;
 }
+
