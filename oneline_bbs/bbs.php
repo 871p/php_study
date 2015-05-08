@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $name = null;
     if (!isset($_POST['name']) || !strlen($_POST['name'])) {
         $errors['name'] = '名前を入力してください';
-    } else if (strlen($_POST['name']) > 40) {
+    } else if (mb_strlen($_POST['name']) > 40) {
         $errors['name'] = '名前は40文字以内で入力してください';
     } else{
         $name = $_POST['name'];
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
     $comment = null;
     if (!isset($_POST['comment']) || !strlen($_POST['comment'])){
         $errors['comment'] = 'ひとことを入力してください';
-    } else if (strlen($_POST['comment']) > 200) {
+    } else if (mb_strlen($_POST['comment']) > 200) {
         $errors['comment'] ='ひとことは200文字以内で入力してください';
     } else {
         $comment = $_POST['comment'];
